@@ -6,6 +6,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import FeaturedProjects from './components/FeaturedProjects';
+import Contact from './components/Contact';
 
 const App: React.FC = () => {
   const [domain, setDomain] = useState<'developer' | 'devops' | 'data-engineering'>('developer');
@@ -39,6 +40,7 @@ const App: React.FC = () => {
         <DynamicContent domain={domain} />
         <FeaturedProjects projects={projects} />
         <About />
+        <Contact />
       </main>
       <Footer />
     </div>
