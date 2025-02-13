@@ -1,4 +1,7 @@
 import React from "react";
+import linkedinIcon from "../Assets/icons/linkedin.svg";
+import githubIcon from "../Assets/icons/github.svg";
+import upworkIcon from "../Assets/icons/upwork.svg";
 
 interface TeamMemberCardProps {
   name: string;
@@ -36,13 +39,13 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ name, roles, image, soc
       {/* Social Links */}
       <div className="flex justify-center gap-6 mt-6 text-gray-500">
         <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">
-          <img src="/Assets/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
+          <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
         </a>
         <a href={socials.github} target="_blank" rel="noopener noreferrer">
-          <img src="/Assets/icons/github.svg" alt="GitHub" className="w-6 h-6" />
+          <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
         </a>
         <a href={socials.upwork} target="_blank" rel="noopener noreferrer">
-          <img src="/Assets/icons/upwork.svg" alt="Upwork" className="w-6 h-6" />
+          <img src={upworkIcon} alt="Upwork" className="w-6 h-6" />
         </a>
       </div>
     </div>

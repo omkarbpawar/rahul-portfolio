@@ -1,4 +1,7 @@
 import React from "react";
+import CloudImg from "../Assets/icons/cloud.svg";
+import DataImg from "../Assets/icons/data-science.svg";
+import fullstackImg from "../Assets/icons/full-stack.svg";
 import ServiceApplicationCard from "./ServiceApplicationCard";
 
 const serviceApplications = [
@@ -6,19 +9,19 @@ const serviceApplications = [
     id: "01",
     title: "Cloud & DevOps",
     description: "Automating cloud infrastructure and optimizing deployment workflows for scalable solutions.",
-    icon: "/Assets/icons/cloud-devops.png",
+    icon: CloudImg,
   },
   {
     id: "02",
     title: "Data Engineering",
     description: "Building robust ETL pipelines and scalable data lakes for analytics and AI-driven insights.",
-    icon: "/Assets/icons/data-engineering.png",
+    icon: DataImg,
   },
   {
     id: "03",
     title: "Full-Stack Development",
     description: "Crafting high-performance web applications with modern frameworks and best practices.",
-    icon: "/Assets/icons/full-stack.png",
+    icon: fullstackImg,
   },
 ];
 

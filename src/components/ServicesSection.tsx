@@ -5,6 +5,8 @@ import CloudImg from "../Assets/icons/cloud-devops.svg";
 import DataScienceImg from "../Assets/icons/data-science.svg";
 import BigDataImg from "../Assets/icons/big-data.svg";
 import FullStackImg from "../Assets/icons/full-stack.svg";
+import ProjectManagementImg from "../Assets/icons/project-management.svg";
+import UIUXImg from "../Assets/icons/ui-ux.svg";
 import { data } from "autoprefixer";
 
 interface ServicesSectionProps {
@@ -35,12 +37,12 @@ const services = [
   {
     title: "Project Management & Consulting",
     description: "Managing software projects using Agile, ensuring efficiency, and delivering technical roadmaps.",
-    icon: "/Assets/icons/project-management.png",
+    icon: ProjectManagementImg,
   },
   {
     title: "UI/UX Design & Prototyping",
     description: "Crafting user-friendly interfaces with research-backed design and interactive prototypes.",
-    icon: "/Assets/icons/ui-ux.png",
+    icon: UIUXImg,
   },
 ];
 

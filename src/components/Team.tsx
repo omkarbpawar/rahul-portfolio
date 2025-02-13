@@ -1,25 +1,27 @@
 import React from "react";
 import TeamMemberCard from "./TeamMemberCard";
+import RahulImg from "../Assets/rahul.webp";
+import OmkarImg from "../Assets/omkar.jpeg";
 
 const teamMembers = [
   {
     name: "Rahul Kumar Sahoo",
     roles: ["Data Scientist", "Cloud Architect", "DevOps Engineer", "Data Engineer"],
-    image: "/Assets/team/rahul.png",
+    image: RahulImg,
     socials: {
-      linkedin: "https://linkedin.com/in/rahul",
-      github: "https://github.com/rahul",
-      upwork: "https://www.upwork.com/rahul",
+      linkedin: "https://www.linkedin.com/in/rahulkumar-sahoo/",
+      github: "https://github.com/LilMonk",
+      upwork: "https://www.upwork.com/freelancers/~01669f7ede78a55c28",
     },
   },
   {
     name: "Omkar Balbhim Pawar",
     roles: ["Project Manager", "UI/UX Designer", "Full Stack Developer"],
-    image: "/Assets/team/omkar.png",
+    image: OmkarImg,
     socials: {
-      linkedin: "https://linkedin.com/in/omkar",
-      github: "https://github.com/omkar",
-      upwork: "https://www.upwork.com/omkar",
+      linkedin: "www.linkedin.com/in/omkar-pawar-b40952204",
+      github: "",
+      upwork: "",
     },
   },
 ];

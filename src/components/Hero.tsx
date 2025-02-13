@@ -7,7 +7,10 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ id }) => {
   return (
-    <section id={id} className="h-screen bg-[#FBF9F4] flex items-center justify-center px-6 md:px-10 pb-16 w-full">
+    <section
+      id={id}
+      className="h-[90vh] md:h-[85vh] bg-[#FBF9F4] flex items-center justify-center px-6 md:px-10 pb-16 w-full"
+    >
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center">
         
         {/* Text Section */}
@@ -19,17 +22,15 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
             simplifying complex tech challenges.
           </h2>
           <p className="text-lg text-gray-700 mt-4 max-w-md">
-            From cloud infrastructure to full-stack development, automation to data-driven insights—if it’s a <span className='font-semibold'>tech challenge</span>, we thrive on solving it. We help businesses scale, optimize, and innovate through smart solutions tailored to their needs.
+            From cloud infrastructure to full-stack development, automation to data-driven insights—if it’s a{" "}
+            <span className="font-semibold">tech challenge</span>, we thrive on solving it. 
+            We help businesses scale, optimize, and innovate through smart solutions tailored to their needs.
           </p>
         </div>
 
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <img 
-            src={HeroImg} 
-            alt="Tech Collaboration" 
-            className="w-[90%] max-w-lg"
-          />
+          <img src={HeroImg} alt="Tech Collaboration" className="w-[90%] max-w-lg" />
         </div>
 
       </div>
