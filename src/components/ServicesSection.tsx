@@ -1,27 +1,36 @@
 // src/components/ServicesSection.tsx
 import React from "react";
 import ServiceCard from "./ServiceCard";
+import CloudImg from "../Assets/icons/cloud-devops.svg";
+import DataScienceImg from "../Assets/icons/data-science.svg";
+import BigDataImg from "../Assets/icons/big-data.svg";
+import FullStackImg from "../Assets/icons/full-stack.svg";
+import { data } from "autoprefixer";
+
+interface ServicesSectionProps {
+  id?: string;
+}
 
 const services = [
   {
     title: "Cloud & DevOps",
     description: "Automating infrastructure, optimizing cloud resources, and ensuring high availability with CI/CD and Kubernetes.",
-    icon: "/Assets/icons/cloud-devops.png",
+    icon: CloudImg,
   },
   {
     title: "Data Science & AI",
     description: "Building AI/ML models, predictive analytics, and automating data-driven decision-making.",
-    icon: "/Assets/icons/data-science.png",
+    icon: DataScienceImg,
   },
   {
     title: "Big Data & ETL Pipelines",
     description: "Processing large-scale datasets, designing ETL/ELT pipelines, and optimizing data warehouses.",
-    icon: "/Assets/icons/big-data.png",
+    icon: BigDataImg,
   },
   {
     title: "Full Stack Development",
     description: "Developing scalable, modern web and mobile applications with a seamless user experience.",
-    icon: "/Assets/icons/full-stack.png",
+    icon: FullStackImg,
   },
   {
     title: "Project Management & Consulting",
@@ -35,9 +44,9 @@ const services = [
   },
 ];
 
-const ServicesSection: React.FC = () => {
+const ServicesSection: React.FC<ServicesSectionProps> = ({ id }) => {
   return (
-    <section className="bg-[#FBF9F4] py-16">
+    <section id={id} className="bg-[#FBF9F4] py-20 px-6 md:px-10 w-full">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-12">Our Services</h2>
 

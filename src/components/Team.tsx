@@ -24,9 +24,13 @@ const teamMembers = [
   },
 ];
 
-const Team: React.FC = () => {
+interface TeamProps {
+  id?: string;
+}
+
+const Team: React.FC<TeamProps> = ({ id }) => {
   return (
-    <section className="bg-[#FBF9F4] py-16">
+    <section id={id} className="bg-[#FBF9F4] py-20 px-6 md:px-10 w-full">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-12">Team</h2>
         <div className="flex flex-col md:flex-row justify-center gap-10">

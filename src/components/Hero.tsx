@@ -1,8 +1,13 @@
 import React from 'react';
+import HeroImg from '../Assets/hero_image.png';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  id?: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ id }) => {
   return (
-    <section className="h-screen bg-[#FBF9F4] flex items-center justify-center px-10">
+    <section id={id} className="h-screen bg-[#FBF9F4] flex items-center justify-center px-6 md:px-10 pb-16 w-full">
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center">
         
         {/* Text Section */}
@@ -21,7 +26,7 @@ const Hero: React.FC = () => {
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
           <img 
-            src="/Assets/business-illustration.png" 
+            src={HeroImg} 
             alt="Tech Collaboration" 
             className="w-[90%] max-w-lg"
           />

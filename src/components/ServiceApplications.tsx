@@ -22,9 +22,13 @@ const serviceApplications = [
   },
 ];
 
-const ServiceApplications: React.FC = () => {
+interface ServiceApplicationsProps {
+  id?: string;
+}
+
+const ServiceApplications: React.FC<ServiceApplicationsProps> = ({ id }) => {
   return (
-    <section className="bg-[#FBF9F4] py-16">
+    <section id={id} className="bg-[#FBF9F4] py-20 px-6 md:px-10 w-full">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-12">Service Applications</h2>
 

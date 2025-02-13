@@ -1,9 +1,13 @@
 // src/components/Footer.tsx
 import React from 'react';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  id?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ id }) => {
   return (
-    <footer className="bg-gray-800 text-white py-4 text-center">
+    <footer id={id} className="bg-gray-800 text-white py-8 text-center px-6 md:px-10 w-full" aria-label="Footer">
       <p>&copy; {new Date().getFullYear()} Rahul Kumar Sahoo. All rights reserved.</p>
       <p>
         <a

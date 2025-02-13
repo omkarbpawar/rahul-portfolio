@@ -11,12 +11,12 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#FBF9F4]">
       <Navbar />
-      <Hero />
-      <ServicesSection />
-      <ServiceApplications />
-      <Team />
-      <Contact />
-      <Footer />
+      <Hero id="hero" />
+      <ServicesSection id="services" />
+      <ServiceApplications id="applications" />
+      <Team id="team" />
+      <Contact id="contact" />
+      <Footer id="footer" />
     </div>
   );
 };

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-const Contact: React.FC = () => {
+interface ContactProps {
+  id?: string;
+}
+
+const Contact: React.FC<ContactProps> = ({ id }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,7 +24,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#FBF9F4] py-16 px-6">
+    <section id={id} className="bg-[#FBF9F4] py-20 px-6 md:px-10 w-full">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch with Us</h2>
         
